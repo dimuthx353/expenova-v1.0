@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Workbench&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Scribble&family=Truculenta:opsz,wght@12..72,100..900&family=Workbench:BLED@1&display=swap");
+body {
+  height: 100vh;
+}
+
+.my-content {
+  height: 100%;
+}
+.my-content img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.my-h-200 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 30px;
+}
+
+.my-div {
+  height: 420px;
+  width: 420px;
+}
+
+.expenova-custom {
+  font-family: "Truculenta", sans-serif;
+}
+
+.mobile-card {
+  display: none !important;
+}
+
+@media only screen and (max-width: 991px) {
+  body {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  body {
+    height: auto;
+  }
+  #card-two {
+    display: none !important;
+  }
+  .mobile-card {
+    display: flex !important;
+  }
+}/*# sourceMappingURL=index.css.map */
