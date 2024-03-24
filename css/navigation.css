@@ -1,18 +1,12 @@
-.logo {
-  width: 50px;
-  object-fit: cover;
-  object-position: center;
-}
-
 nav {
   position: relative;
   border-bottom: 2px solid rgba(6, 8, 96, 0.9411764706);
 }
-
-nav > a {
-  color: #fff !important;
+nav .logo {
+  width: 50px;
+  object-fit: cover;
+  object-position: center;
 }
-
 nav::after {
   content: "";
   position: absolute;
@@ -22,9 +16,8 @@ nav::after {
   height: 100%;
   border-bottom: 2px solid transparent;
   border-right: none;
-  animation: change-border-color 5s ease-out 2 forwards;
+  animation: change-border-color 5s ease-out infinite forwards;
 }
-
 nav::before {
   content: "";
   position: absolute;
@@ -34,7 +27,18 @@ nav::before {
   height: 100%;
   border-bottom: 2px solid transparent;
   border-left: none;
-  animation: change-border-color-2 5s ease-in-out 2 forwards;
+  animation: change-border-color-2 5s ease-in-out infinite forwards;
+}
+nav svg {
+  width: 200px;
+  height: 50px;
+  letter-spacing: 1px;
+}
+nav svg text {
+  animation: stroke 4s infinite;
+  stroke-width: 2;
+  stroke: black;
+  background: black;
 }
 
 @keyframes change-border-color-2 {
@@ -45,7 +49,6 @@ nav::before {
   100% {
     width: 100%;
     border-color: rgb(255, 255, 255);
-    z-index: -2;
   }
 }
 @keyframes change-border-color {
@@ -68,22 +71,8 @@ nav::before {
   100% {
     width: 100%;
     border-color: rgb(16, 124, 255);
-    z-index: -1;
   }
 }
-svg {
-  width: 200px;
-  height: 50px;
-  letter-spacing: 1px;
-}
-
-svg text {
-  animation: stroke 4s infinite;
-  stroke-width: 2;
-  stroke: black;
-  background: black;
-}
-
 @keyframes stroke {
   0% {
     fill: rgb(137, 191, 238);

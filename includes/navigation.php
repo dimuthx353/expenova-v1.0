@@ -1,7 +1,7 @@
 <?php
 echo '<nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
-        <img src="./img/logo.jpg" class="logo" alt="">
+        <img src="./img/logo.png" class="logo" alt="">
         <a class="navbar-brand text-primary fw-bold" id="expenova" href="#">
             <div class="wrapper">
                 <svg class="">
@@ -25,7 +25,7 @@ echo '<nav class="navbar navbar-expand-lg bg-dark">
                         
                       ">
                 <li class="nav-item">
-                    <a class="nav-link text-white active letter-spacing" aria-current="page" href="#">HOME</a>
+                    <a class="nav-link text-primary disabled active letter-spacing" aria-current="page" href="#">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white letter-spacing" href="#">OVERVIEW</a>

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -13,10 +17,16 @@ body {
   letter-spacing: 2px;
 }
 
-.letter-spacing-2 {
-  letter-spacing: 2px;
+.letter-spacing-3 {
+  letter-spacing: 3px;
 }
 
-.letter-spacing-2 {
+.letter-spacing-4 {
   letter-spacing: 4px;
+}
+
+/* Shadow */
+.my-shadow {
+  /* Apply box shadow */
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }/*# sourceMappingURL=reset.css.map */
