@@ -1,6 +1,3 @@
-/* Font Imports */
-@import url("https://fonts.googleapis.com/css2?family=Workbench&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Scribble&family=Truculenta:opsz,wght@12..72,100..900&family=Workbench:BLED@1&display=swap");
 /* Body Styles */
 body {
   height: 100vh;
@@ -28,11 +25,6 @@ body {
   width: 400px;
   border-radius: 7px;
   overflow: hidden;
-}
-
-/* Custom Fonts */
-.expenova-custom {
-  font-family: "Truculenta", sans-serif;
 }
 
 /* Mobile Card */
@@ -64,29 +56,25 @@ body {
     display: flex !important;
   }
 }
-.social-media {
-  position: absolute;
-  top: 50%;
-  transform: translate(50%, -50%);
-  width: fit-content;
-  min-width: 20px;
-  min-height: 70px;
-  cursor: pointer;
-  left: -20px;
+.social-media-icons {
+  padding: 30px 15px 15px 15px;
+  border-top: 2px solid #fff;
 }
-.social-media .social-media-icons {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 200px;
-  padding: 10px;
-  transition: all 0.4s ease-in;
+.social-media-icons i {
+  color: rgba(251, 251, 251, 0.9843137255);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 2.7rem;
 }
-.social-media .social-media-icons > button {
-  background-color: #000;
-  padding: 5px 2px;
+.social-media-icons i:hover {
+  opacity: 0.6;
 }
-.social-media .social-media-icons i {
-  color: #fff;
-  cursor: pointer;
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-violet-bg);
+  --bs-tooltip-color: var(--bs-white);
+}
+
+.my-location-home {
+  color: #007acc !important;
 }/*# sourceMappingURL=index.css.map */
